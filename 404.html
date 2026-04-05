@@ -7,7 +7,7 @@
     <script>
       ;(function () {
         const { location } = window
-        const basePath = '/easy-visit-china-site/' === '/' ? '' : '/easy-visit-china-site/'.replace(/\/$/, '')
+        const basePath = '/' === '/' ? '' : '/'.replace(/\/$/, '')
         const routePath = location.pathname.startsWith(basePath)
           ? location.pathname.slice(basePath.length)
           : location.pathname
